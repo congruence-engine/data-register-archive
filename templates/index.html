@@ -1,0 +1,63 @@
+{{ template "base" . }}
+
+{{ define "title" }}☃️ Snowman Demo{{ end }}
+
+{{ define "content" }}
+
+<header>
+    <h1>Congruence Engine Data Register Archive</h1>
+    <p>Data source: <a href="https://congruence-engine.wikibase.cloud">Congruence Engine Data Register</a></p>
+    <p class="note">Note: This is a <strong>static</strong> page generated with <a href="https://github.com/glaciers-in-archives/snowman">Snowman</a>. Unlike the <a href="https://congruence-engine.github.io/data-register-app/">Data Register web app</a>, the data on this page do not update automagically.</p>
+</header>
+
+<div id="wikibase" class="container">
+    <div class="row gy-4">
+        {{ range . }}
+        <div class="col-xs-12 col-md-6 col-lg-4">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <h2 class="wikibase-title">{{ .datasetName }}</h2>
+                    <p class="wikibase-description">{{ .datasetDescription }}</p>
+                    <ul class="list-group list-group-flush mt-auto metadata">
+                        <li class="list-group-item">
+                            <p>Created</p>
+                            <p>{{ if trim .created }} {{ trim .created }} {{ else }} N/A {{ end }}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Keywords</p>
+                            <p>{{ if trim .keywords }} {{ trim .keywords }} {{ else }} N/A {{ end }}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Held by</p>
+                            <p>{{ if trim .heldBy }} {{ trim .heldBy | safe_html }} {{ else }} N/A {{ end }}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Datasheet</p>
+                            <p>{{ if trim .datasheetURL }} <a href="{{ trim .datasheetURL }}">Digital Cultural Heritage Datasheet</a> {{ else }} N/A {{ end }}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Copyright status</p>
+                            <p>{{ if trim .copyrightStatus }} {{ trim .copyrightStatus }} {{ else }} N/A {{ end }}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Copyright licence</p>
+                            <p>{{ if trim .copyrightLicense }} {{ trim .copyrightLicense | safe_html }} {{ else }} N/A {{ end }}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Used by</p>
+                            <p>{{ if trim .usedBy }} {{ trim .usedBy | safe_html }} {{ else }} N/A {{ end }}</p>
+                        </li>
+                        <li class="list-group-item">
+                            <p>Data Register</p>
+                            {{ $parts := (split .dataset "/") }}
+                            <p><a href="{{ .dataset }}">Data Register ({{ index $parts (sub (len $parts) 1) }})</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+
+{{ end }}

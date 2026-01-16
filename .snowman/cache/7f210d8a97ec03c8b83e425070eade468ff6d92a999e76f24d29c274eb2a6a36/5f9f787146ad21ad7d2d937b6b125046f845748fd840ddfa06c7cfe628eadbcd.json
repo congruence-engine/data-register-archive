@@ -1,0 +1,834 @@
+{
+  "head" : {
+    "vars" : [ "dataset", "datasetName", "datasetDescription", "created", "keywords", "heldBy", "datasetURLs", "copyrightStatus", "copyrightLicense", "datasheetURLs", "usedBy" ]
+  },
+  "results" : {
+    "bindings" : [ {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q5"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Belle Vue Studio Dataset"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Part of the Bradford Industrial Museum (BIM) collection and includes metadata information about Photographic portrait from Manningham’s Belle Vue Studio."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q4954703\">Bradford Industrial Museum</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q8"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Bradford District Museums and Galleries (BDMG) Technology Dataset"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Textiles machines in the Bradford Industrial Museum (BIM) collection, categorised by textiles manufacturing process. Contains a list of objects (e.g., lamps, books, and other technological items) related to the industrial history of Bradford."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q59536191\">Bradford District Museums and Galleries</a>, <a href=\"https://www.wikidata.org/wiki/Q4954703\">Bradford Industrial Museum</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q17"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Bradford Industrial Museum Geolocated Photograph Data"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Descriptions, titles, file names, and geo-location data for images in BIM's photograph collection that include the keywords Beck, mill, Bradford aerial, Saltaire aerial, Baird, tram, Tim Smith and station. Used in the Congruence Engine exhibit."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "Bradford, Aerial photography, Bradford Beck, Mill, Photography, Rivers, Tram, Transport"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://bradfordmuseums.org/venue/bradford-industrial-museum/\">Bradford Industrial Museum</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://photos.bradfordmuseums.org/"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q6"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "British Telecom Archives Subset of Full Archive"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dataset describes a sub-set of BT Archives’ holdings, provided to Congruence Engine on 17 February 2023. Includes catalogue descriptions of any item in the public domain, spanning the history of telecommunications from invention to privatisation."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : "February 2023"
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "telecommunications, telegraphy, British Telecom"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.bt.com/about/bt/our-history/bt-archives\">BT Archives</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://www.digitalarchives.bt.com/Calmview/"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q3"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Brotherton Bradford Textiles Business Records"
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q24568958\">Brotherton Special Collections, Leeds University Library</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q9"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Grace's Guide"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Dataset gathered by contribution from the Grace’s Guide community and relating to industry and manufacturing in Britain from the start of the Industrial Revolution to the present time."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q21644420\">Grace's Guide</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://gracesguide.co.uk"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q19"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Historic Environment Records (HERs)"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Historic Environment Records (HERs) are local databases in England providing information on industrial archaeology and historic sites, from prehistoric tools to current-day structures. Most of it is available via Heritage Gateway."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "Heritage Gateway, Industrial archaeology, Historic built environment"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q7531819\">Historic Environment Record</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://www.heritagegateway.org.uk/gateway/default.aspx"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q4"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "National Coal Mining Collections Catalogue"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Catalogue of the National Coal Mining Museum, which includes industrial objects, ledgers, photographs and some black and white negatives related to various coal mines."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q12062380\">National Coal Mining Museum for England</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q16"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "National Heritage List for England (NHLE)"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The National Heritage List for England (NHLE) is the official, up-to-date register of all nationally protected historic sites, including listed buildings, monuments, parks, and battlefields. It uses the British National Grid and is updated daily."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "Listed Buildings, Protected Wrecks, Scheduled Monuments, World Heritage Sites, architecture"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q19604421\">Historic England</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://opendata-historicengland.hub.arcgis.com/"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q99891702\">Open Government Licence v3 (OGL)</a>"
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q14"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "National Library of Scotland - Ordnance Survey maps"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Collection of digitised Ordnance Survey maps held by the National Library of Scotland"
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "National Library of Scotland, Geospatial, Maps, Ordnance Survey, Mapping"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q1670994\">National Library of Scotland</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://maps.nls.uk/os/"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q12"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "National Wool Museum Collection Metadata"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Amgueddfa Cymru export of metadata from the catalogue of the National Wool Museum in Drefach, Wales"
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "Social History, Textiles, Wool"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q6979452\">National Wool Museum</a>, <a href=\"https://www.wikidata.org/wiki/Q2046319\">Amgueddfa Cymru</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "Congruence Engine"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q7"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Saltaire Collection Catalogue Export"
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.saltairecollection.org/about\">The Saltaire World Heritage Education Association (SWHEA)</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q10"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Science Museum Group Object Records"
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q7433571\">Science Museum Group</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q13"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Electrical Age Journal"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "A digitized collection of \"The Electrical Age\" and \"Electric Living\" (1926-1986), journals by the Electrical Association for Women, covering domestic electricity, home design, social history engineering and innovation."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "Electric Living, Electrical Association for Women (EAW), History of Electricity, The Electrical Age, Digitised journal, Domestic appliances, Electrical appliances"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q1164410\">Institution of Engineering and Technology</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://www.theiet.org/membership/library-and-archives/the-iet-archives/online-exhibitions/women-and-engineering/the-electrical-age-journal"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : "The downloading of material for private research only from this digitised version of The Electrical Age is permitted."
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q15"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Woman Engineer journal"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Woman Engineer is the quarterly journal of the Women's Engineering Society. It offers valuable insights into women in engineering and social history of technology. Digitised volumes from 1919 to 2014 are available online."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "The Woman Engineer, Women's Engineering Society (WES), History of engineering, Caroline Haslett"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q1164410\">Institution of Engineering and Technology</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://www.theiet.org/membership/library-and-archives/the-iet-archives/online-exhibitions/women-and-engineering/the-woman-engineer-journal"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : "The downloading of material for use in the public domain from this digitised version of The Woman Engineer is permitted free of charge provided that a credit is given to ‘Women's Engineering Society and the IET Archives’. In addition to the credit line please complete a reproduction request form. This can be obtained by contacting the IET Archives."
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q18"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The Yorkshire Textile Directory (Worrall's) - companies dataset"
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : "July 2024"
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "Textiles, Companies, Textile Companies, Trade Directories"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q11"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "Tyne & Wear Archives & Museums"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "The collections include archival materials and historical objects related to the industrial heritage in the north east and Newcastle (mainly mining, shipbuilding, and general engineering)."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "engineering, industrial heritage, mining, shipbuilding"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q7860476\">Tyne & Wear Archives & Museums</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://www.twmuseums.org.uk/collections/collections-search"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : ""
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    }, {
+      "dataset" : {
+        "type" : "uri",
+        "value" : "https://congruence-engine.wikibase.cloud/entity/Q2"
+      },
+      "datasetName" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "West Yorkshire Queer Stories Bradford oral histories"
+      },
+      "datasetDescription" : {
+        "xml:lang" : "en",
+        "type" : "literal",
+        "value" : "22 oral histories related to Bradford from the West Yorkshire Queer Stories collection."
+      },
+      "created" : {
+        "type" : "literal",
+        "value" : "April 2024"
+      },
+      "keywords" : {
+        "type" : "literal",
+        "value" : "Queer, Bradford, LGBTQ+, Social History"
+      },
+      "heldBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://wyqs.co.uk\">West Yorkshire Queer Stories</a>, <a href=\"https://www.wikidata.org/wiki/Q112573200\">West Yorkshire Archives</a>"
+      },
+      "datasetURLs" : {
+        "type" : "literal",
+        "value" : "https://wyqs.co.uk/app/"
+      },
+      "copyrightStatus" : {
+        "type" : "literal",
+        "value" : "public domain"
+      },
+      "copyrightLicense" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.wikidata.org/wiki/Q6938433\">CC0</a>"
+      },
+      "datasheetURLs" : {
+        "type" : "literal",
+        "value" : "https://zenodo.org/records/8375034"
+      },
+      "usedBy" : {
+        "type" : "literal",
+        "value" : "<a href=\"https://www.sciencemuseumgroup.org.uk/projects/the-congruence-engine\">Congruence Engine</a>"
+      }
+    } ]
+  }
+}

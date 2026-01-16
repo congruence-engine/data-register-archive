@@ -1,0 +1,126 @@
+PREFIX ce:   <https://congruence-engine.wikibase.cloud/entity/>
+PREFIX cet:  <https://congruence-engine.wikibase.cloud/prop/direct/>
+PREFIX cep:  <https://congruence-engine.wikibase.cloud/prop/>
+PREFIX ceps: <https://congruence-engine.wikibase.cloud/prop/statement/>
+PREFIX cepq: <https://congruence-engine.wikibase.cloud/prop/qualifier/>
+PREFIX wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT 
+  ?dataset 
+  ?datasetName
+  ?datasetDescription
+  (GROUP_CONCAT(DISTINCT ?formattedDate; separator=", ") AS ?created)
+  (GROUP_CONCAT(DISTINCT ?datasetKeyword; separator=", ") AS ?keywords)
+  (GROUP_CONCAT(DISTINCT ?heldByFormatted; separator=", ") AS ?heldBy)
+  (GROUP_CONCAT(DISTINCT ?datasetURL; separator=", ") AS ?datasetURLs)
+  (GROUP_CONCAT(DISTINCT ?datasetCopyrightStatus; separator=", ") AS ?copyrightStatus)
+  (GROUP_CONCAT(DISTINCT ?copyrightLicenseFormatted; separator=", ") AS ?copyrightLicense)
+  (GROUP_CONCAT(DISTINCT ?datasetDatasheetURL; separator=", ") AS ?datasheetURLs)
+  (GROUP_CONCAT(DISTINCT ?usedByFormatted; separator=", ") AS ?usedBy)
+WHERE
+{
+  ?dataset cet:P1 ce:Q1 .
+  
+  # Get dataset label and description
+  ?dataset rdfs:label ?datasetName .
+  FILTER(LANG(?datasetName) = "en")
+  
+  OPTIONAL {
+    ?dataset schema:description ?datasetDescription .
+    FILTER(LANG(?datasetDescription) = "en")
+  }
+  
+  # Keywords
+  OPTIONAL { ?dataset cet:P3 ?datasetKeyword . }
+  
+  # Date created - format as "Month Year"
+  OPTIONAL { 
+    ?dataset cet:P4 ?datasetDateCreated .
+    BIND(MONTH(?datasetDateCreated) AS ?monthNum)
+    BIND(
+      IF(?monthNum = 1, "January",
+      IF(?monthNum = 2, "February",
+      IF(?monthNum = 3, "March",
+      IF(?monthNum = 4, "April",
+      IF(?monthNum = 5, "May",
+      IF(?monthNum = 6, "June",
+      IF(?monthNum = 7, "July",
+      IF(?monthNum = 8, "August",
+      IF(?monthNum = 9, "September",
+      IF(?monthNum = 10, "October",
+      IF(?monthNum = 11, "November",
+      IF(?monthNum = 12, "December", ""))))))))))))
+    AS ?monthName)
+    BIND(CONCAT(?monthName, " ", STR(YEAR(?datasetDateCreated))) AS ?formattedDate)
+  }
+
+  # Held by - format as HTML link (prefer external URL over Wikidata URL)
+  OPTIONAL {
+    ?dataset cep:P5 ?heldByStatement . 
+    ?heldByStatement ceps:P5 ?datasetHeldBy .
+  
+    # Try to get external website URL (not Wikidata)
+    OPTIONAL { 
+      ?heldByStatement cepq:P2 ?externalURL .
+      FILTER(!CONTAINS(STR(?externalURL), "wikidata.org"))
+    }
+  
+    # Try to get Wikidata URL
+    OPTIONAL { 
+      ?heldByStatement cepq:P2 ?wikidataURL .
+      FILTER(CONTAINS(STR(?wikidataURL), "wikidata.org"))
+    }
+  
+    # Use external URL if available, otherwise Wikidata URL
+    BIND(COALESCE(?externalURL, ?wikidataURL) AS ?preferredURL)
+    
+    # Format as HTML link if URL exists, otherwise just the name
+    BIND(
+      IF(BOUND(?preferredURL),
+        CONCAT('<a href="', STR(?preferredURL), '">', ?datasetHeldBy, '</a>'),
+        ?datasetHeldBy
+      ) AS ?heldByFormatted
+    )
+  }
+  # Dataset URL - value as is
+  OPTIONAL { ?dataset cet:P6 ?datasetURL . }
+  
+  # Copyright status - value as is
+  OPTIONAL { ?dataset cet:P7 ?datasetCopyrightStatus . }
+  
+  # Copyright license - format as HTML link
+  OPTIONAL {
+    ?dataset cep:P8 ?copyrightLicenseStatement .
+    ?copyrightLicenseStatement ceps:P8 ?datasetCopyrightLicense .
+    OPTIONAL { ?copyrightLicenseStatement cepq:P2 ?copyrightLicenseURL . }
+    
+    # Format as HTML link if URL exists, otherwise just the name
+    BIND(
+      IF(BOUND(?copyrightLicenseURL),
+        CONCAT('<a href="', STR(?copyrightLicenseURL), '">', ?datasetCopyrightLicense, '</a>'),
+        ?datasetCopyrightLicense
+      ) AS ?copyrightLicenseFormatted
+    )
+  }
+  
+  # Datasheet URL - value as is
+  OPTIONAL { ?dataset cet:P9 ?datasetDatasheetURL . }
+  
+  # Used by - format as HTML link
+  OPTIONAL {
+    ?dataset cep:P10 ?usedByStatement .
+    ?usedByStatement ceps:P10 ?datasetUsedBy .
+    OPTIONAL { ?usedByStatement cepq:P2 ?usedByURL . }
+    
+     # Format as HTML link if URL exists, otherwise just the name
+    BIND(
+      IF(BOUND(?usedByURL),
+        CONCAT('<a href="', STR(?usedByURL), '">', ?datasetUsedBy, '</a>'),
+        ?datasetUsedBy
+      ) AS ?usedByFormatted
+    )    
+  }
+}
+GROUP BY ?dataset ?datasetName ?datasetDescription
+ORDER BY ASC(UCASE(?datasetName))
