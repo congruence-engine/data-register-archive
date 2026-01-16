@@ -1,0 +1,85 @@
+/* Bootstrap overrides */
+/* undo styles */
+body {
+    font-weight: 300;
+}
+.card {
+    border-radius: 0;
+    border: none;
+}
+.card> .list-group:last-child {
+    border-radius: 0;
+}
+.list-group-item {
+    background-color: transparent;
+}
+.list-group-flush>.list-group-item {
+    border-width: 1px 0 0;
+}
+/* modify styles */
+body {
+    margin-bottom: 1rem;
+}
+.card {
+    background-color: rgb(244, 244, 244);
+}
+.list-group-item {
+    padding-right: 0;
+    padding-left: 0;
+}
+.tooltip {
+    --bs-tooltip-bg: #666;
+    --bs-tooltip-border-radius: 0;
+}
+
+/* Custom styles */
+header {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+header h1 {
+    margin-bottom: 0;
+    font-weight: 600;
+}
+#wikibase {
+    margin: 4rem 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+#wikibase .wikibase-title {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.375;
+}
+#wikibase .wikibase-description {
+    margin-bottom: 2rem;
+}
+#wikibase .metadata li p {
+    margin-bottom: 0;
+    font-size: .875rem;
+}
+#wikibase .metadata li p:first-child {
+    font-size: .75rem;
+    color: #525252;
+}
+footer .colophon {
+    text-align: center;
+}
+footer .colophon .icon {
+    aspect-ratio: 1 / 1;
+    background-color: #ccc;
+    border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+}
+footer .colophon .icon:hover {
+    background-color: #666;
+}
+footer .colophon .tooltippy {
+    display: inline-block;
+}
+strong {
+    font-weight: 600;
+}
