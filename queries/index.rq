@@ -1,3 +1,10 @@
+# Notes on data export:
+# - Dates formatted as "Month Year"
+# - Name/URL pairs formatted as HTML links using CONCAT and COALESCE
+# - External URLs prioritised over Wikidata URLs for "held by"
+# - Results grouped and ordered alphabetically
+# - `safe_html` used in Snowman templates to render pre-formatted HTML (Name/URL pairs)
+
 PREFIX ce:   <https://congruence-engine.wikibase.cloud/entity/>
 PREFIX cet:  <https://congruence-engine.wikibase.cloud/prop/direct/>
 PREFIX cep:  <https://congruence-engine.wikibase.cloud/prop/>
